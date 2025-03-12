@@ -15,7 +15,7 @@ function showTime() {
   var hours = now.getHours().toString().padStart(2, '0');
   var minutes = now.getMinutes().toString().padStart(2, '0');
   document.getElementById("Time").textContent = `${hours}:${minutes}`;
-  window.setTimeout("showTime()", 60000); // Here 1000(milliseconds) means one 1 Sec, 60000 means 1 minute
+  window.setTimeout("showTime()", 1000); // Here 1000(milliseconds) means one 1 Sec, 60000 means 1 minute
 }
 </script>
   
