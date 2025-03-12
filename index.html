@@ -13,9 +13,9 @@
     //ShowTime();
   });
 function updateTime() {
-  const now = new Date();
-  const hours = now.getHours().toString().padStart(2, '0');
-  const minutes = now.getMinutes().toString().padStart(2, '0');
+  var now = new Date();
+  var hours = now.getHours().toString().padStart(2, '0');
+  var minutes = now.getMinutes().toString().padStart(2, '0');
   document.getElementById("Time").textContent = `${hours}:${minutes}`;
   //window.setTimeout("ShowTime()", 1000); // Here 1000(milliseconds) means one 1 Sec  
 }
