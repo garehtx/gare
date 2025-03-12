@@ -1,14 +1,3 @@
-function updateTime() {
-    const now = new Date();
-    const hours = now.getHours().toString().padStart(2, '0');
-    const minutes = now.getMinutes().toString().padStart(2, '0');
-    document.getElementById("Time").textContent = `${hours}:${minutes}`;
-}
-
-// Update the time every minute
-setInterval(updateTime, 60000);
-updateTime(); // Initial call to display the time immediately
-
 // Get the container element
 const container = document.querySelector(".container");
 
