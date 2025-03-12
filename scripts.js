@@ -1,6 +1,3 @@
-// Get the container element
-const container = document.querySelector(".container");
-
 function updateTime() {
     const now = new Date();
     const hours = now.getHours().toString().padStart(2, '0');
@@ -11,6 +8,9 @@ function updateTime() {
 // Update the time every minute
 setInterval(updateTime, 60000);
 updateTime(); // Initial call to display the time immediately
+
+// Get the container element
+const container = document.querySelector(".container");
 
 // Attach hover event listener to the services
 container.addEventListener("mouseover", (event) => {
