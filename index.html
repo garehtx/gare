@@ -4,6 +4,19 @@
 <head>
   <title>GARE</title>
   <link rel="stylesheet" href="styles.css" type="text/css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+</script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    ShowTime();
+  });
+function ShowTime() {
+  var dt = new Date();
+  document.getElementById("Time").innerHTML = dt.toLocaleTimeString();
+  window.setTimeout("ShowTime()", 1000); // Here 1000(milliseconds) means one 1 Sec  
+}
+</script>
+  
 </head>
 
 <body>
